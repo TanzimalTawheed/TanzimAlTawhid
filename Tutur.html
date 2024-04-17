@@ -1,0 +1,1056 @@
+<html>
+
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+<title>Ansarallah&nbsp;&nbsp; </title>
+
+
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.ansarallah.com/javascripts/ahah.js" ></script>
+
+<script type="text/javascript" src="http://www.ansarallah.com/javascripts/swfobject.js"></script>
+
+
+
+<!-- addnon - start of thickbox -->
+
+	<link rel="stylesheet" href="http://www.ansarallah.com/css/thickbox.css" type="text/css" media="screen" />
+
+   	<script type="text/javascript" src="http://www.ansarallah.com/javascripts/jquery.js"></script> <!--hrp i renamed it to test the search function-->
+
+   
+
+   	<script type="text/javascript" src="http://www.ansarallah.com/javascripts/thickbox.js"></script>
+
+<!-- addnon - end of thickbox -->
+
+
+
+<!-- Carousel Code Start -->
+
+	
+
+<!-- Carousel Code end -->
+
+
+
+<!--uploader style -->
+
+	<style>
+
+  	   .info {font:18px Arial;}
+
+  	   .data {background-color:#b3b3b3; border:1px solid #898989; width:40%;}
+
+  	   .data tr td {background-color:#ffffff; font:13px Arial; width:35%;}
+
+  	   .bar1 {background-color:#b3b3b3; position:relative; text-align:left; height:20px; width:px; border:1px solid #505050;}
+
+  	   .bar2 {background-color:#EAB90E; position:relative; text-align:left; height:20px; width:0%;}
+
+	</style>
+
+<!-- uploader style end-->
+
+
+
+<!--start of video uploader section -->
+
+
+
+<script type="text/javascript" src="http://www.ansarallah.com/javascripts/uploader_bar.js">
+
+</script>
+
+<!-- end of video uploader -->
+
+
+
+<!--start of audio uploader section -->
+
+
+
+
+
+<!-- end of audio uploader -->
+
+
+
+<link href="css/rating_style.css" rel="stylesheet" type="text/css" media="all">
+
+
+
+<!-- ajax rating -->
+
+
+
+<!-- end ajax -->
+
+
+
+<!-- audio ajax rating -->
+
+
+
+<!-- end ajax -->
+
+
+
+
+
+<script type="text/javascript">
+
+
+
+  var _gaq = _gaq || [];
+
+  _gaq.push(['_setAccount', 'UA-32960870-1']);
+
+  _gaq.push(['_trackPageview']);
+
+
+
+  (function() {
+
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+  })();
+
+
+ 
+</script>
+
+
+<style type="text/css">
+
+ /* SEARCH FORM */
+#searchform { margin:50px 200px; font-size:18px; }
+#searchform div { color:#eeeeee; }
+#searchform div input { font-size:18px; padding:5px; width:500px; }
+#suggestions{ position: absolute; max-width:512px; width:100%; display:none; max-height:240px; overflow: auto !important ; z-index: 100; right:0; border:10px solid #919191;
+
+  
+}
+
+/* SEARCHRESULTS */
+#searchresults {
+	width:100%;
+    text-align: inherit;    
+    background-color: #a0a0a0;
+    font-size: 10px;
+    line-height: 14px;
+	margin:0;}
+#searchresults a { display: block;
+    background-color: #e4e4e4;
+    clear: left;
+    height: 56px;
+    text-decoration: none; border-bottom:3px solid #b7b7b7 }
+#searchresults a:hover { background-color:#b7b7b7; color:#ffffff; }
+#searchresults a img {     float: left;
+    padding: 5px 10px;
+    height: 50px; }
+#searchresults a span.searchheading {     display: block;
+    font-weight: bold;
+    padding-top: 5px;
+    color: #191919; }
+#searchresults a:hover span.searchheading { color:#ffffff; }
+#searchresults a span {     color: #555555; }
+#searchresults a:hover span { color:#f1f1f1; }
+
+#searchresults span.category { font-size:11px; margin:5px; display:block; color:#ffffff; }
+#searchresults span.seperator { float:right; padding-right:15px; margin-right:5px;
+      background-image:url(../images/shortcuts_arrow.gif); background-repeat:no-repeat; background-position:right; }
+#searchresults span.seperator a { background-color:transparent; display:block; margin:5px; height:auto; color:#ffffff; }
+.product_wrapper_body .panel-heading {
+    margin-bottom: 0;
+}
+   
+
+</style>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>  
+
+<link rel="stylesheet" type="text/css" href="addons/ajaxsearchmod/ads.css" />
+
+<script type="text/javascript" src="addons/ajaxsearchmod/ads.js"></script>
+
+
+<script type="text/javascript">
+ 
+google.load("jquery", "1.3.1");
+google.setOnLoadCallback(function()
+{
+  
+  $("#suggestions").css(cssObj);
+  
+    $(document).click(function(e){
+        if ($(e.target).closest("#suggestions").length == 0) {
+            $("#suggestions").fadeOut();
+        }
+    });
+
+});
+
+function lookup(inputString) { 
+  if(inputString.length == 0) {
+    $('#suggestions').fadeOut(); // Hide the suggestions box
+  } else {
+    $.post("test.php",
+
+      {req: ""+inputString+""},
+
+     function(data) { // Do an AJAX call
+      $('#suggestions').fadeIn(); // Show the suggestions box
+      $('#suggestions').html(data); // Fill the suggestions box
+    });
+  }
+}
+
+</script>
+
+</head>
+
+
+
+<body class="MainBody">
+
+<img src="../ba1.jpg" align="middle" width="900px" class="path-header-imge"/>	
+
+<div class="MainBody_Container">
+
+  <div id="top_container" class="mobile_header">
+
+    <div id="LogoTop_main"></div>
+
+    <div class="SearchBoxMain">
+
+  	<form class="FormSearch" method="POST">
+
+		
+                          	
+			   <input  type="text"  value="" id="inputString" onkeydown="lookup(this.value);" onkeyup="lookup(this.value);" />
+                           <div id="suggestions"></div>
+			
+
+                         
+                        	<select size="1" name="type" id="type" >
+                                <option value="videos">Videos</option>
+                               <!--  <option value="audio">Audios</option>
+                                <option value="groups">Groups</option> -->
+                            </select>	
+                        
+	           
+      
+		<!--  <input class="top-submit" type="submit" value="Submit" name="B2" />
+		-->
+		</form>
+
+    </div><script type="text/javascript"><!--
+
+google_ad_client = "ca-pub-9054858044736807";
+
+/* test4 */
+
+google_ad_slot = "5479673848";
+
+google_ad_width = 728;
+
+google_ad_height = 15;
+
+//-->
+
+</script>
+
+<script type="text/javascript"
+
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+
+</script>
+
+  </div>
+
+  <div class="Menu_Container">
+
+    <!-- main menu -->
+
+    <div class="MenuButtons_main">
+
+    <ul>
+
+      <li></li>
+
+      <li></li>
+
+      <li></li>
+
+      <li></li>
+
+      <li></li>
+
+      <li></li>
+
+    </ul>
+
+    </div>
+
+  </div>
+
+  <div class="SubMenu_Container">
+
+    <!--submenu 1-->
+
+    
+
+
+
+    <!--submenu 2-->
+
+    
+
+  </div>
+
+  <div class="TopBanner_Container">
+
+    <!--top banner here-->
+
+    <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="http://www.ansarallah.com/index.php" class="active">Home</a>
+  <a href="http://www.ansarallah.com/seemore.php?load=recent">الفيديو</a>
+  <a href="http://www.ansarallah.com/category.php">قنوات</a>
+  <a href="http://www.ansarallah.com/genre.php?load=recent"> صوتيات</a>
+  <a href="http://path2islam.com/eng/" >الإنجليزية</a>
+  <a href="http://path2islam.com/fre/" >فرنسي</a>
+  <a href="https://path2islam.com/spa/" >الأسبانية</a>
+     <a href="http://www.ansarallah.com/rssmotion.php" >Rss
+</a>
+
+  
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+  </div>
+
+  
+
+  <div id="spacer1"></div>
+
+  <div id="InnerBody_Container">
+
+    <div id="InnerTemaplates_Container">
+
+      <!--inner templates -->
+
+      
+<div id="AllHeaderTitles">
+  <div align="center"><span class="font4_18 style2"><strong><strong>&nbsp;جميع <strong><strong>القنات</strong></strong></strong>&nbsp;</strong></span>
+    <div id="AllHeaderTitles">
+      <div align="center">
+        <p class="style2 font4_18">&nbsp;</p>
+        <p class="style2 font4_18">&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="ContentSplitContainer_left_2"><!--random video start -->
+  <div id="IndexPreviewBox_1">
+    <!-- Ads -->
+    <div id="IndexPreviewBox_2">
+      <div id="IndexPreviewBox_content">
+        <ul class="IndexPreviewBox_list">
+          <li>
+            <iframe align="center" scrolling="no" height="200" frameborder="0" src="http://ansarallah.com/demo/demo1.html" name="I1" id="I1" style="width: 220px"></iframe>          </li>
+          <li><span class="font4_14"></a></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--random video end --><!-- start of "whats showing" menu -->
+  <div class="GenericMenuGold220_btm">
+    <div id="CategoryLeftBox2" class="GenericMenuGold220 font4_14_l">
+      <p align="right">&nbsp;</p>
+      <div align="right">
+        <ul>
+          <li class="style6"><strong><a href="seemore.php?load=featured">مميزة </a></strong></li>
+            <li class="style6"><a href="seemore.php?load=viewed">مشاهدة الأكثر </a></li>
+            <li class="style6"><span class="style7"><strong><a href="seemore.php?load=recent">آخر </a></strong></span></li>
+         
+            <li>&nbsp;</li>
+        </ul>
+      </div>
+      <ul>
+      </ul>
+    </div>
+  </div>
+  <!-- end of "whats showing" menu -->
+<!--site stats start -->
+  <div id="SiteStatsBox_1">
+    <div id="SiteStatsBox_2">
+      <div id="SiteStatsBox_content">
+        <div align="right">
+          <ul class="SiteStatsBox_list">
+            <li>
+              <span class="font5_12">إحصائيات الموقع</span></li>
+              <li>
+                <font color="#994800">فيديو </font></li>
+              <li>
+                <img src="images/icon_uploaded.gif" alt="uploaded" border="0" align="absmiddle" width="22" height="22" />&nbsp;حملت: <strong>
+                3046
+              </strong></li>
+              <li>
+                <img src="images/icon_watched.gif" alt="watched" border="0" align="absmiddle" width="23" height="21" />&nbsp;شاهد: <strong>
+                3133098938
+              </strong></li>
+                       <li>صوتيات</li>
+              <li><img src="images/audio.gif" alt="uploaded" width="22" height="22" border="0" align="absmiddle" />&nbsp;حملت: <strong>
+              1408
+              </strong></li>
+              <li><img src="images/played.gif" alt="listened" width="23" height="21" border="0" align="absmiddle" />&nbsp;واستمع: <strong>
+              3984252
+              </strong></li>
+                         <li>مستخدمي في الوقت الراهن</li>
+              <li>المجموع: <strong>
+              43
+              </strong></li>
+              <li>الضيوف: <strong>
+              43
+              </strong></li>
+              <li>الأعضاء على الإنترنت: 
+                
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div align="right">
+    <!--site stats right end -->
+  </div><!--ads left start -->
+
+<div id="AdsLeft_1">
+
+    <!-- Ads -->
+
+    <div id="AdsLeft_2">
+
+      <div id="AdsLeft_content">
+
+        <ul class="AdsLeft_list">
+
+          <li>
+
+<p>
+
+<p align="center">Follow us on </p>
+<p align="center"><a href="https://www.youtube.com/channel/UCQDwBeNrq3gWkBKkbVKXbbA" target="_blank"><img src="http://ansarallah.com/images/y2.jpg" alt="Follow us on Youtube" width="42" height="42" border="0"></a><a href="http://twitter.com/path4islam" target="_blank"> <img src="http://ansarallah.com/images//t2.jpg" width="42" height="42" border="0"></a><a href="https://www.facebook.com/Path2Islamcomeng-443739562793534/" target="_blank"> <img src="http://ansarallah.com/images//f2.jpg" width="42" height="42" border="0"> </a></a></p>
+</body>
+<!-- start feedwind code -->
+<script type="text/javascript">
+	// <!&#91;CDATA&#91;
+	rssmikle_url = "http://www.dawahoffice.com/rssmotion.php";
+	rssmikle_frame_width = "100%";
+	rssmikle_frame_height = "300";
+	rssmikle_target = "_blank";
+	rssmikle_font = "Arial, Helvetica, sans-serif";
+	rssmikle_font_size = "12";
+	rssmikle_border = "off";
+	responsive = "on";
+	rssmikle_css_url = "";
+	text_align = "left";
+	autoscroll = "on";
+	scrollstep = "3";
+	mcspeed = "20";
+	sort = "Rnd";
+	rssmikle_title = "on";
+	rssmikle_title_bgcolor = "#f9f463";
+	rssmikle_title_color = "#FFFFFF";
+	rssmikle_title_bgimage = "http://150";
+	rssmikle_item_bgcolor = "#FFFFFF";
+	rssmikle_item_bgimage = "http://";
+	rssmikle_item_title_length = "45";
+	rssmikle_item_title_color = "#666666";
+	rssmikle_item_border_bottom = "on";
+	rssmikle_item_description = "on";
+	rssmikle_item_description_length = "150";
+	rssmikle_item_description_color = "#666666";
+	rssmikle_item_date = "off";
+	rssmikle_timezone = "Etc/GMT";
+	datetime_format = "%b %e, %Y %l:%M:%S %p";
+	rssmikle_item_description_tag = "on_flexcroll";
+	rssmikle_item_podcast = "off";
+	// ]]>
+	
+</script>
+
+
+          &nbsp;&nbsp;&nbsp;&nbsp; </li>
+
+          <li>
+
+			<p>&nbsp;&nbsp;&nbsp; &nbsp;</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<!--ads left end -->
+
+  <!-- start of "whats showing" menu -->
+ 
+  <!-- end of "whats showing" menu -->
+  <div></div>
+</div>
+
+<!-- start of right Container -->
+<div id="ContentSplitContainer_right_2">
+<!-- start of categories list -->
+<div id="Noname">
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid= الشيخ عبدالرزاق العباد">&nbsp; الشيخ عبدالرزاق العباد</a></span></li>
+<li><a href="category_home.php?cid= الشيخ عبدالرزاق العباد"><img border="0" src="uploads/thumbs/Dxmltne7bs4VdG29.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li> الشيخ عبدالرزاق العباد</li>
+<li><b>الفيديو   أحدث</b>
+<li><a href="play.php?vid=8367">حكم شرب الماء أثناء...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid= رياض الصالحين للشيخ ابن عثيمين">&nbsp; رياض الصالحين للشيخ ابن عثيمين</a></span></li>
+<li><a href="category_home.php?cid= رياض الصالحين للشيخ ابن عثيمين"><img border="0" src="uploads/thumbs/1qEnjDHvKizZxtkW.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>  28<br />
+VIDEOS رياض الصالحين للشيخ ابن عثيمين</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=5913">متى يكون الجمع في ا�...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=فتاوى">&nbsp;فتاوى</a></span></li>
+<li><a href="category_home.php?cid=فتاوى"><img border="0" src="uploads/thumbs/pmTtPGrZFWkeynHR.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>فتاوى</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=8049">لقاء&#91;12 من 12] ما حكم ح...</a></li>
+</ul>
+</div>
+<div class="clearfix2"></div>
+</div><div id="Noname">
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=قرآن كريم">&nbsp;قرآن كريم</a></span></li>
+<li><a href="category_home.php?cid=قرآن كريم"><img border="0" src="uploads/thumbs/xxzepdjq4wmrfncz.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>قرآن كريم</li>
+<li><b>الفيديو   أحدث</b>
+<li><a href="play.php?vid=3217">شرح طريقة الغسل من الجنابة - الشيخ محمد ال...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=للشِّيخ عبدالرزاق البدر">&nbsp;للشِّيخ عبدالرزاق البدر</a></span></li>
+<li><a href="category_home.php?cid=للشِّيخ عبدالرزاق البدر"><img border="0" src="uploads/thumbs/3btfvrFcSlgEWHLA.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>للشِّيخ عبدالرزاق البدر</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=7911">تأخير الزواج خطأ فا...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=مجموعة  سدرة المنتهى">&nbsp;مجموعة  سدرة المنتهى</a></span></li>
+<li><a href="category_home.php?cid=مجموعة  سدرة المنتهى"><img border="0" src="uploads/thumbs/wvs4y8u37g4gmtcm.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>مجموعة  سدرة المنتهى</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=4742">درر غالية عن الخشوع في الصلاة-ج1-الشيخ الش...</a></li>
+</ul>
+</div>
+<div class="clearfix2"></div>
+</div><div id="Noname">
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=القرآن الكريم والقراءات">&nbsp;القرآن الكريم والقراءات</a></span></li>
+<li><a href="category_home.php?cid=القرآن الكريم والقراءات"><img border="0" src="uploads/thumbs/WSDJf29cNuqHd1YQ.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>القرآن الكريم والقراءات</li>
+<li><b>الفيديو   أحدث</b>
+<li><a href="play.php?vid=7643">Quran: 2. Surah Al-Baqara (The Calf...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=التفسير">&nbsp;التفسير</a></span></li>
+<li><a href="category_home.php?cid=التفسير"><img border="0" src="uploads/thumbs/XMkmPDxWA0cYSCz5.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>التفسير</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=7814">العريفي : تفسير سور�...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الحديث">&nbsp;الحديث</a></span></li>
+<li><a href="category_home.php?cid=الحديث"><img border="0" src="uploads/thumbs/5FaL2if3KxbuVNeG.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>الحديث</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=7723">تفسير الحديث </a></li>
+</ul>
+</div>
+<div class="clearfix2"></div>
+</div><div id="Noname">
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=السيرة النبوية">&nbsp;السيرة النبوية</a></span></li>
+<li><a href="category_home.php?cid=السيرة النبوية"><img border="0" src="uploads/thumbs/bYRwKEpkgTAJ6fnN.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>السيرة النبوية</li>
+<li><b>الفيديو   أحدث</b>
+<li><a href="play.php?vid=7802">السيرة النبوية كام�...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الشيخ فهد الكندري">&nbsp;الشيخ فهد الكندري</a></span></li>
+<li><a href="category_home.php?cid=الشيخ فهد الكندري"><img border="0" src="uploads/thumbs/IMeh9RFSdV6f7ClT.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>دعوة إلى الله</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=6639">سورة الملك كاملة - ل...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الشيخ محمد المنجد">&nbsp;الشيخ محمد المنجد</a></span></li>
+<li><a href="category_home.php?cid=الشيخ محمد المنجد"><img border="0" src="uploads/thumbs/hd5asrcwussn03fr.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>الشيخ محمد المنجد</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=5008">حكم البول في موضع الاغتسال - الشيخ المنجد</a></li>
+</ul>
+</div>
+<div class="clearfix2"></div>
+</div><div id="Noname">
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الشيخ محمد المختار الشنقيطي">&nbsp;الشيخ محمد المختار الشنقيطي</a></span></li>
+<li><a href="category_home.php?cid=الشيخ محمد المختار الشنقيطي"><img border="0" src="uploads/thumbs/q9hiPAGegT0vUznN.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>الشيخ محمد المختار الشنقيطي</li>
+<li><b>الفيديو   أحدث</b>
+<li><a href="play.php?vid=6466">باب المعتكف يدخل رأ...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الشيخ محمد الددو">&nbsp;الشيخ محمد الددو</a></span></li>
+<li><a href="category_home.php?cid=الشيخ محمد الددو"><img border="0" src="uploads/thumbs/sytceezijg46sabf.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>الشيخ محمد الددو</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=4257">الوسطية في الإسلام مفهومها وضوابطها, الد�...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الشيخ محمد العريفي">&nbsp;الشيخ محمد العريفي</a></span></li>
+<li><a href="category_home.php?cid=الشيخ محمد العريفي"><img border="0" src="uploads/thumbs/8gdzc7y2d2fd0xyg.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>الشيخ محمد العريفي</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=3225">هل يجوز قص الحواجب - الشيخ محمد العريفى</a></li>
+</ul>
+</div>
+<div class="clearfix2"></div>
+</div><div id="Noname">
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الشيخ محمد بن علي الشنقيطي">&nbsp;الشيخ محمد بن علي الشنقيطي</a></span></li>
+<li><a href="category_home.php?cid=الشيخ محمد بن علي الشنقيطي"><img border="0" src="uploads/thumbs/QhnrwyVAfEKkUB7C.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>الشيخ محمد بن علي الشنقيطي</li>
+<li><b>الفيديو   أحدث</b>
+<li><a href="play.php?vid=8446">برنامج آسماء الله ا...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الشيخ ناصر القطامي">&nbsp;الشيخ ناصر القطامي</a></span></li>
+<li><a href="category_home.php?cid=الشيخ ناصر القطامي"><img border="0" src="uploads/thumbs/6SyTIUvNeqf04tWC.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>قرآن</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=7071">سورة آل عمران - الشي...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الشيخ أبو بكر الجزائري">&nbsp;الشيخ أبو بكر الجزائري</a></span></li>
+<li><a href="category_home.php?cid=الشيخ أبو بكر الجزائري"><img border="0" src="uploads/thumbs/lt2dZIDcipA6Bq4N.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>دروس المسجد النبوي</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=8576">دروس الحرمين أجناس ...</a></li>
+</ul>
+</div>
+<div class="clearfix2"></div>
+</div><div id="Noname">
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الشيخ الامام عبدالعزيز بن باز">&nbsp;الشيخ الامام عبدالعزيز بن باز</a></span></li>
+<li><a href="category_home.php?cid=الشيخ الامام عبدالعزيز بن باز"><img border="0" src="uploads/thumbs/FDkrRS74tNVYLvfh.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>الشيخ الامام عبدالعزيز بن باز</li>
+<li><b>الفيديو   أحدث</b>
+<li><a href="play.php?vid=7629">من فتاوى الشيخ عبدا...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الشيخ ابن عثيمين">&nbsp;الشيخ ابن عثيمين</a></span></li>
+<li><a href="category_home.php?cid=الشيخ ابن عثيمين"><img border="0" src="uploads/thumbs/LqVFseWXaA6i2Cx3.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>الشيخ ابن عثيمين</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=8604">ستأتيك الأرزاق من ح...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الشيخ سعد الخثلان">&nbsp;الشيخ سعد الخثلان</a></span></li>
+<li><a href="category_home.php?cid=الشيخ سعد الخثلان"><img border="0" src="uploads/thumbs/FC4YbxP1SNytH3wj.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>الشيخ سعد الخثلان</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=6307">ساعة فتوى : مع فضيلة...</a></li>
+</ul>
+</div>
+<div class="clearfix2"></div>
+</div><div id="Noname">
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الشيخ سعد الشتري">&nbsp;الشيخ سعد الشتري</a></span></li>
+<li><a href="category_home.php?cid=الشيخ سعد الشتري"><img border="0" src="uploads/thumbs/wGp91BN6yT0Qjemv.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>الشيخ سعد الشتري</li>
+<li><b>الفيديو   أحدث</b>
+<li><a href="play.php?vid=7650">فضيحة خاشقجي و سبب �...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الشيخ صالح آل الشيخ">&nbsp;الشيخ صالح آل الشيخ</a></span></li>
+<li><a href="category_home.php?cid=الشيخ صالح آل الشيخ"><img border="0" src="uploads/thumbs/m3ehichjcsohdfr3.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>الشيخ صالح آل الشيخ</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=4611">مع سماحة الشيخ عبد العزيز بن عبد الله آل ا...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الشيخ صالح الفوزان">&nbsp;الشيخ صالح الفوزان</a></span></li>
+<li><a href="category_home.php?cid=الشيخ صالح الفوزان"><img border="0" src="uploads/thumbs/3ymr8nyw5f3hvojz.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>الشيخ صالح الفوزان</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=5078">الشيخ صالح الفوزان : الفرق بين موالاة الك�...</a></li>
+</ul>
+</div>
+<div class="clearfix2"></div>
+</div><div id="Noname">
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الشيخ صالح المغامسي">&nbsp;الشيخ صالح المغامسي</a></span></li>
+<li><a href="category_home.php?cid=الشيخ صالح المغامسي"><img border="0" src="uploads/thumbs/xQUsmJ6bKRBDruwE.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>الشيخ صالح المغامسي</li>
+<li><b>الفيديو   أحدث</b>
+<li><a href="play.php?vid=6310">هل يجوز المسح على ا�...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الشيخ علي الشبيلي">&nbsp;الشيخ علي الشبيلي</a></span></li>
+<li><a href="category_home.php?cid=الشيخ علي الشبيلي"><img border="0" src="uploads/thumbs/8aiqdap5ujr6ch6u.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>الشيخ علي الشبيلي</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=5247">من أجلك للشيخ د.علي الشبيلي الحلقة 4</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الشيخ عبدالله المصلح">&nbsp;الشيخ عبدالله المصلح</a></span></li>
+<li><a href="category_home.php?cid=الشيخ عبدالله المصلح"><img border="0" src="uploads/thumbs/JhAPUcE0pnz3fwQm.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>الشيخ عبدالله المصلح</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=6110">فتوى ثبوت هلال رمضا...</a></li>
+</ul>
+</div>
+<div class="clearfix2"></div>
+</div><div id="Noname">
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الشيخ عبدالعزيز الفوزان">&nbsp;الشيخ عبدالعزيز الفوزان</a></span></li>
+<li><a href="category_home.php?cid=الشيخ عبدالعزيز الفوزان"><img border="0" src="uploads/thumbs/dwecrjhsx8pqmv53.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>الشيخ عبدالعزيز الفوزان</li>
+<li><b>الفيديو   أحدث</b>
+<li><a href="play.php?vid=3925">حكم دفع الزكاة للخادمة د.عبدالعزيزالفوزا...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=الطفل المسلم">&nbsp;الطفل المسلم</a></span></li>
+<li><a href="category_home.php?cid=الطفل المسلم"><img border="0" src="uploads/thumbs/rw9B2AhIuiVcLztK.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>الطفل المسلم</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=8091">60 - 70 حكم الحديث الم�...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=العقيدة الواسطية">&nbsp;العقيدة الواسطية</a></span></li>
+<li><a href="category_home.php?cid=العقيدة الواسطية"><img border="0" src="uploads/thumbs/3aNWqgZ9mrLExcf2.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>العقيده</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=8158">274- كتاب التوحيد - تا...</a></li>
+</ul>
+</div>
+<div class="clearfix2"></div>
+</div><div id="Noname">
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=خالد المصلح">&nbsp;خالد المصلح</a></span></li>
+<li><a href="category_home.php?cid=خالد المصلح"><img border="0" src="uploads/thumbs/GuB61vLyf4Sd2PkE.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>خالد المصلح</li>
+<li><b>الفيديو   أحدث</b>
+<li><a href="play.php?vid=6560">فتوى   حكم صلاة الجم...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=خطب الجمعه بالحرمين الشريفين">&nbsp;خطب الجمعه بالحرمين الشريفين</a></span></li>
+<li><a href="category_home.php?cid=خطب الجمعه بالحرمين الشريفين"><img border="0" src="uploads/thumbs/hNlijp0gz8SqaXrJ.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>خطب الجمعه بالحرمين الشريفين</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=7700">خطبة الجمعه والدعا�...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=رقائق">&nbsp;رقائق</a></span></li>
+<li><a href="category_home.php?cid=رقائق"><img border="0" src="uploads/thumbs/e5vb0j6pfz8jqjib.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>رقائق</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=4929">هل تكرر صلاة الاستخارة؟-الشيخ الشنقيطي</a></li>
+</ul>
+</div>
+<div class="clearfix2"></div>
+</div><div id="Noname">
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=ركن المرأة المسلمة">&nbsp;ركن المرأة المسلمة</a></span></li>
+<li><a href="category_home.php?cid=ركن المرأة المسلمة"><img border="0" src="uploads/thumbs/5n35axfsziycbkbx.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>ركن المرأة المسلمة</li>
+<li><b>الفيديو   أحدث</b>
+<li><a href="play.php?vid=5476">أحكام صلاة الجمعة والجماعة للمرأة  :::  فضي...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal">
+<ul>
+<li><span class="font4_14"><a href="category_home.php?cid=شرح اسماء الله الحسنى للشيخ عبدالرزاق البدر ">&nbsp;شرح اسماء الله الحسنى للشيخ عبدالرزاق ال�...</a></span></li>
+<li><a href="category_home.php?cid=شرح اسماء الله الحسنى للشيخ عبدالرزاق البدر "><img border="0" src="uploads/thumbs/58BMVuZGFvcwf4AR.jpg" width="120" height="90" alt="thumb" /></a></li>
+<li>شرح اسماء الله الحسنى للشيخ عبدالرزاق �...</li>
+<li><b>الفيديو أحدث</b></li>
+<li><a href="play.php?vid=8512">فابتغوا عند الله ال...</a></li>
+</ul>
+</div>
+
+<div class="CategoryBoxHorizontal" style="border:none; background-color:transparent;">
+<br />
+
+</div>
+<div class="clearfix2"></div>
+</div>
+<div class="clearfix2"></div>
+</div>
+</span>
+<!-- DO NOT DELETE ME - end -->
+
+
+<!-- nothing found div -->
+
+<!-- nothing found end -->
+
+</div>
+<!-- end of categories list -->
+
+
+  <!-- end of right container -->
+<div class="clearfix2"></div>
+
+
+      <div class="clearfix2"></div>
+
+    </div>
+
+    <div id="BottomBanner_Container">
+
+      <!--bottom ads -->
+
+      
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+
+  <div id="MainFooter_Container">
+
+    <p><a href="page.php?page=1"><br />
+
+    </a></p>
+
+	<p>&nbsp;</p>
+
+    <p>May Allah reward you for your Visit</p>
+
+  </div>
+
+   <!--Begin In-Video Ad Code--> 
+
+   
+
+ <!--End In-Video Ad Code-->
+
+
+
+
+</html>
+
+</body>
+
+</html>
+
+<div id="pbr">Path2islam.com</div><!--Powered by Internet code-->
+<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_default_style" style="bottom:0px; left:50%; margin-left:-100px;">
+   <a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_pinterest"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_tumblr"></a>
+<a class="a2a_button_facebook_messenger"></a>
+</div>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.num_services = 6;
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script><div align="center"><table border="0" cellpadding="0" cellspacing="0" width="183"><tr><td>&nbsp;</td></tr><tr>
+	<td height="18" style="border: 1px solid #999999; " bgcolor="#FFFFFF"><p align="center">
+	<font face="Arial" color="#6B8FDA" style="font-size: 8pt">Powered free by </font>
+	<font face="Arial" color="#333333" style="font-size: 8pt"> <a href="http://www.phpmotion.com">
+	<font color="#6B8FDA">PHPmotion</font></a></font></td></tr></table></div>
